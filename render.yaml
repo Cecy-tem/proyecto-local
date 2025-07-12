@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: proyecto-local
+    name: backend-django
     env: python
-    plan: free
     buildCommand: pip install -r backend/requirements.txt
-    startCommand: gunicorn backend.wsgi
+    startCommand: gunicorn wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: backend.settings
+    workingDir: backend
