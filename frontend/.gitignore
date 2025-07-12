@@ -1,0 +1,22 @@
+# Entorno virtual
+venv/
+
+# Node modules (React)
+frontend/node_modules/
+
+# Carpeta de build de React
+frontend/build/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Base de datos SQLite (si usas)
+db.sqlite3
+
+# Configuraciones de VSCode
+.vscode/
+
+# Archivos ocultos del sistema
+.DS_Store
+Thumbs.db
